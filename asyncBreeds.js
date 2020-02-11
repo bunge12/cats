@@ -12,9 +12,13 @@ const breedDetailsFromFile = function (breed, callback) {
   //        Currently not returning anything from here, so breedDetailsFromFile function returns undefined.
 };
 
-const printData = (data) => {
-  console.log(data);
-}
+// const printData = (data) => {
+//   console.log(data);
+// }
 
 // we try to get the return value
-const bombay = breedDetailsFromFile('Bombay', printData);
+// const bombay = breedDetailsFromFile('Bombay', printData);
+
+const bombay = breedDetailsFromFile('Bombay', printData = data => {
+  console.log(data);
+});
